@@ -1,4 +1,4 @@
-<h1><a href="https://haojiyouvip.github.io">好基友地址发布页(点此进入)</a></h1> 
+<h1><a href="https://hjyvip.github.io">好基友地址发布页(点此进入)</a></h1> 
 
 ## 好基友网的全部资源分享！！！
 ### 该vip享有的特权
