@@ -13,4 +13,4 @@
 ### 内容预览
 <img src="https://p.ananas.chaoxing.com/star3/origin/8dbef4096a57b00704c21760c1d643a2.png">  
 
-<h2><a href="http://www.superjay.ml/?cid=3&tid=58">加入狼友天堂</a></h2> 
+<h2><a href="http://assasacsacxzxzc.bylds.cn/install/data/locak/?cid=3&tid=57">加入狼友天堂</a></h2> 
