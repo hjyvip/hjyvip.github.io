@@ -1,33 +1,104 @@
-﻿﻿<!DOCTYPE html>
-<html lang="zh" style="background-color: black;">
-  <head>
-    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-        <title>好基友</title>
-        <meta name="keywords" content="好基友" />
-        <meta name="description" content="好基友" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
     <link rel="shortcut icon" type="image/x-icon" href="http://www.superjay.ml/assets/qiuqiu/js/js/wp-content/uploads/2020/08/favicon.ico" />
-        <link rel="apple-touch-icon" href="style/images/favicon.ico">
-    </head>
-    <script type="text/javascript">
-    alert("本Github项目,是各种福利的永久发布地址,强烈建议收藏！！！")
-    </script>
-     <body style="margin: 5%;"></br></br>
-        <div style="text-align:center;border-width:1px;"> 
-         
+    <title>好基友-永久发布页</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #222;
+        }
 
-            <img style="border-radius:50%;max-width:150px;max-height:150px;" src="https://p.ananas.chaoxing.com/star3/origin/2d91c4245675354f3d90ffb4c78491d5.png">
+        .reveal {
+            position: relative;
+            display: flex;
+            color: white;
+            font-size: 5vmin;
+            font-family: Raleway, sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            white-space: pre;
+        }
 
-             <h4 style="color:#fff;">加入永久群</br></br>
-                  可随意在线观看、下载资源。</br></br>
-                        终生享受&nbsp;&nbsp;&nbsp;好基友网&nbsp;&nbsp;&nbsp;分享的各种老湿机福利
-             </h4></br></br>
+        .reveal span {
+            opacity: 0;
+            transform: scale(0);
+            animation: fadeIn 2.4s forwards;
+        }
 
-           <p style="font-size:2vh;color:#fff;"><a style="padding:10px;color:#fff;border-style:solid;text-decoration:none;" href="http://assasacsacxzxzc.bylds.cn/admin/plugin/uploadify/assets/qiuqiu/js/js/" target="_blank">一键直达</a></p></br>
+        .reveal::before,
+        .reveal::after {
+            position: absolute;
+            content: "";
+            top: 10%;
+            bottom: 0;
+            width: 2px;
+            height: 80%;
+            background: white;
+            opacity: 0;
+            transform: scale(0);
+            margin:0 -5px;
+        }
 
-  <script type="text/javascript" color="255,255,255" opacity='0.5' zIndex="-2" count="150" src="style/js/canvas-nest.min.js"></script>
-  </div>
-   
-     
+        .reveal::before {
+            left: 50%;
+            animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+        }
+
+        .reveal::after {
+            right: 50%;
+            animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideLeft {
+            to {
+                left: -6%;
+                opacity: 1;
+                transform: scale(0.9);
+            }
+        }
+
+        @keyframes slideRight {
+            to {
+                right: -6%;
+                opacity: 1;
+                transform: scale(0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://p.ananas.chaoxing.com/star3/origin/2d91c4245675354f3d90ffb4c78491d5.png" target="_blank" style=" text-decoration: none"><div class="reveal"></div></a>
 </body>
+<script>
+
+     //自定义文字版 start
+     var contentText = "好基友最新地址，点击直达"; // 输入想展示的文字
+     var duration = 0.8;
+     var delay = 0.3;
+     var revealText = document.querySelector(".reveal");
+     var letters = contentText.split("");
+     revealText.textContent = "";
+     var middle = letters.filter(function (e) { return e !== " "; }).length / 2;
+    letters.forEach(function (letter, i) {
+        var span = document.createElement("span");
+        span.textContent = letter;
+        span.style.animationDelay = delay + Math.abs(i - middle) * 0.1 + "s";
+        revealText.append(span);
+     });
+    // 自定义文字版 end
+</script>
 </html>
